@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  background-color: #03033a;
+  color: whitesmoke;
+}
+
+body {
+  color: #222;
+  font: 18px/30px "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navigation li a {
+  color: #030e3f;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* .navigation li a:hover
+{
+  font-size: 1.5em;
+  color: #091d77;
+  border-bottom: 3px solid #091d77 ;
+} */
+.main-header h1 {
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  color: #040431;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+  padding: 50px 10px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.363), white);
+  width: 100%;
+}
+
+@media screen and (min-width: 460px) {
+  .main-header h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-header h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 50px 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .main-header h1 {
+    font-size: 4em;
+    line-height: 5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-header h1 {
+    padding: 100px 40px;
+  }
+}
+.header {
+  background: url(/img/header-photo.jpg) top no-repeat;
+  background-size: cover;
+}
+
+.main-header {
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
+  padding: 40px 0 0 0;
+  height: 500px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media screen and (min-width: 991px) {
+  .main-header {
+    height: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-header {
+    height: 900px;
+  }
+}
+.logo {
+  position: relative;
+  z-index: 100;
+}
+
+.logo a {
+  background: url(/img/logo.png) top left no-repeat;
+  background-size: contain;
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  z-index: 1000;
+  margin: 5px;
+}
+
+@media screen and (min-width: 991px) {
+  .logo a {
+    width: 200px;
+    height: 100px;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navigation li a {
+  display: inline-block;
+  padding: 20px 30px 20px 0px;
+  text-decoration: none;
+}
+
+/* Hamburger icon */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  border-radius: 30px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Hamburger icon */

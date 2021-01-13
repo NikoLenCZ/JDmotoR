@@ -1,0 +1,59 @@
+
+.header {
+  background: url(/img/header-photo.jpg) top no-repeat;
+  background-size: cover;
+  
+}
+
+.main-header {
+position: relative;
+z-index: 2;
+margin-top: 0;
+padding: 40px 0 0 0;
+height: 500px;
+width: auto;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+
+
+@media screen and (min-width: 991px) {
+ .main-header {
+height: 700px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+ .main-header {
+height: 900px;
+    }
+}
+
+.logo {
+  position: relative;
+  z-index: 100;
+}
+
+.logo a {
+  background: url(/img/logo.png) top left no-repeat;
+  background-size: contain;
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  z-index: 1000;
+  margin: 5px;
+}
+
+@media screen and (min-width: 991px){
+.logo a {
+  width: 200px;
+  height: 100px;
+}
+}
+
+
+
+
