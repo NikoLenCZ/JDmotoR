@@ -1,55 +1,83 @@
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
-  top: 0;
-  right: 0;
-  z-index: 100;
   position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 1000;
+  scroll-behavior: smooth;
 }
 
-.navigation li a {
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+  transition: 1s;
+}
+
+nav.blue ul {
+  background: rgba(6, 25, 102, 0.9);
+}
+
+nav.blue li a {
+  color: whitesmoke;
+}
+
+nav ul li {
   display: inline-block;
-  padding: 20px 30px 20px 0px;
+  padding: 24px 16px;
+}
+
+nav ul li a {
   text-decoration: none;
+  color: #061966;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-/* Hamburger icon */
-.hamburger.container {
-  display: inline-block;
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #061966;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
   cursor: pointer;
+  color: whitesmoke;
+  display: none;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  border-radius: 30px;
-  margin: 6px;
-  transition: 0.4s;
-}
+@media (max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
+  nav ul {
+    max-height: 0px;
+    background: rgba(6, 25, 102, 0.9);
+    color: whitesmoke;
+  }
 
-.change .bar2 {
-  opacity: 0;
-}
+  nav.blue ul {
+    background: rgba(6, 25, 102, 0.9);
+  }
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
+  .showing {
+    max-height: 34em;
+  }
 
-/* Hamburger icon */
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

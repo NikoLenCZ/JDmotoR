@@ -1,12 +1,10 @@
 .header {
   background: url(/img/header-photo.jpg) top no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .main-header {
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
   padding: 40px 0 0 0;
   height: 500px;
   width: auto;
@@ -26,8 +24,9 @@
   }
 }
 .logo {
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  float: left;
+  z-index: 1000;
 }
 
 .logo a {
@@ -37,8 +36,7 @@
   text-indent: -9999px;
   width: 100px;
   height: 50px;
-  z-index: 1000;
-  margin: 5px;
+  margin: 9px;
 }
 
 @media screen and (min-width: 991px) {

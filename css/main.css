@@ -64,42 +64,31 @@ body {
 }
 
 .main-container {
-  width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media screen and (min-width: 460px) {
-  .main-container {
-    width: 440px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main-container {
-    width: 748px;
-  }
-}
-
-@media screen and (min-width: 991px) {
-  .main-container {
-    width: 971px;
-  }
+section {
+  padding: 20px 10px;
 }
 
 @media screen and (min-width: 1200px) {
   .main-container {
-    width: 1170px;
+    max-width: 1170px;
+  }
+  section {
+    padding: 30px 20px;
+  }
+  section.firm {
+    margin-top: 40px;
+  }
+  section.firm p {
+    max-width: 50%;
   }
 }
 
 .mtb-small {
   margin: 24px 0;
-}
-
-section {
-  padding: 30px;
-  margin: 20px 0;
 }
 
 p {
@@ -115,14 +104,6 @@ ol.process {
 
 ol.process li {
   padding: 5px 0 5px 5px;
-}
-
-section.firm p {
-  max-width: 50%;
-}
-
-section.firm {
-  margin-top: 40px;
 }
 
 section .container {
@@ -169,7 +150,7 @@ address {
 }
 
 address a {
-  color: #b9090e;
+  color: #920b0f;
 }
 
 iframe {
@@ -261,12 +242,10 @@ h3 {
   background: url(/img/header-photo.jpg) top no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
+  width: 100%;
 }
 
 .main-header {
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
   padding: 40px 0 0 0;
   height: 500px;
   width: auto;
@@ -297,8 +276,9 @@ h3 {
 }
 
 .logo {
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  float: left;
+  z-index: 1000;
 }
 
 .logo a {
@@ -309,8 +289,7 @@ h3 {
   text-indent: -9999px;
   width: 100px;
   height: 50px;
-  z-index: 1000;
-  margin: 5px;
+  margin: 9px;
 }
 
 @media screen and (min-width: 991px) {
@@ -346,80 +325,84 @@ footer p {
 }
 
 nav {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-}
-
-.navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  list-style: none;
-  top: 0;
-  right: 0;
-  z-index: 100;
   position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 1000;
+  scroll-behavior: smooth;
 }
 
-.navigation li a {
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+nav.blue ul {
+  background: rgba(6, 25, 102, 0.9);
+}
+
+nav.blue li a {
+  color: whitesmoke;
+}
+
+nav ul li {
   display: inline-block;
-  padding: 20px 30px 20px 0px;
+  padding: 24px 16px;
+}
+
+nav ul li a {
   text-decoration: none;
+  color: #061966;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-/* Hamburger icon */
-.hamburger.container {
-  display: inline-block;
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #061966;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 24px;
   cursor: pointer;
+  color: whitesmoke;
+  display: none;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
-  margin: 6px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+@media (max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+  }
+  nav ul {
+    max-height: 0px;
+    background: rgba(6, 25, 102, 0.9);
+    color: whitesmoke;
+  }
+  nav.blue ul {
+    background: rgba(6, 25, 102, 0.9);
+  }
+  .showing {
+    max-height: 34em;
+  }
+  nav ul li {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+  }
 }
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
-  -ms-transform: rotate(-45deg) translate(-8px, 8px);
-      transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  -ms-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-8px, -8px);
-}
-
-/* Hamburger icon */

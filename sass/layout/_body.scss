@@ -12,43 +12,50 @@ font: 18px/30px 'Open Sans', sans-serif;
 }
 
 .main-container {
-  width: 340px;
   margin-left: auto;
   margin-right: auto;
 }
 
+section {
+  padding: 20px 10px;
+}
+
 @media screen and (min-width: 460px) {
-  .main-container {
-    width: 440px;
-  }
+  
 }
 
 @media screen and (min-width: 768px) {
-  .main-container {
-    width: 748px;
-  }
+  
 }
 
 @media screen and (min-width: 991px) {
-  .main-container {
-    width: 971px;
-  }
+  
 }
 
 @media screen and (min-width: 1200px) {
   .main-container {
-    width: 1170px;
+    max-width: 1170px;
   }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  section.firm {
+    margin-top: 40px;
+  }
+
+  section.firm p {
+    max-width: 50%;
+  }
+
 }
 
 .mtb-small {
   margin: 24px 0;
 }
 
-section {
-  padding: 30px;
-  margin: 20px 0;
-}
+
 
 p {
   margin: 11px;
@@ -65,13 +72,9 @@ ol.process li {
   padding: 5px 0 5px 5px;
 }
 
-section.firm p {
-  max-width: 50%;
-}
 
-section.firm {
-  margin-top: 40px;
-}
+
+
 
 section .container {
   display: flex;
@@ -92,6 +95,7 @@ section .container {
   height: auto;
   margin: 11px;
  }
+
 .container.address {
   justify-content: space-around;
   margin: 40px 0 60px 0;
@@ -105,7 +109,7 @@ section .container {
 
 
   address a {
-    color: rgb(185, 9, 14);
+    color: rgb(146, 11, 15);
   }
 
   iframe {
