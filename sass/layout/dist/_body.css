@@ -34,6 +34,10 @@ body {
     width: 1170px;
   }
 }
+.mtb-small {
+  margin: 24px 0;
+}
+
 section {
   padding: 30px;
   margin: 20px 0;

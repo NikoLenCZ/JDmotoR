@@ -24,7 +24,7 @@ nav {
 }
 
 /* Hamburger icon */
-.container {
+.hamburger.container {
   display: inline-block;
   cursor: pointer;
 }
