@@ -6,7 +6,7 @@
 
 .main-header {
   padding: 40px 0 0 0;
-  height: 500px;
+  height: 400px;
   width: auto;
   display: flex;
   align-items: flex-end;
@@ -15,33 +15,16 @@
 
 @media screen and (min-width: 991px) {
   .main-header {
-    height: 700px;
+    height: 500px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-header {
-    height: 900px;
+    height: 700px;
   }
 }
-.logo {
-  position: fixed;
-  float: left;
-  z-index: 1000;
-}
-
-.logo a {
-  background: url(/img/logo.png) top left no-repeat;
-  background-size: contain;
-  display: block;
-  text-indent: -9999px;
-  width: 100px;
-  height: 50px;
-  margin: 9px;
-}
-
-@media screen and (min-width: 991px) {
-  .logo a {
-    width: 200px;
-    height: 100px;
+@media screen and (min-width: 1380px) {
+  .main-header {
+    height: 900px;
   }
 }

@@ -1,10 +1,9 @@
-
 nav {
   position: fixed;
   width: 100%;
   line-height: 60px;
   z-index: 1000;
-  scroll-behavior: smooth;
+
 }
 
 nav ul {
@@ -23,21 +22,20 @@ nav.blue ul {
 }
 
 nav.blue li a {
-    
+
   color: whitesmoke;
 }
 
+
 nav ul li {
   display: inline-block;
-  padding: 24px 16px;;
+  padding: 24px 16px;
+  ;
 
 }
 
 nav ul li a {
   text-decoration: none;
-  color: rgb(6, 25, 102);
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .menu-icon {
@@ -50,43 +48,79 @@ nav ul li a {
   cursor: pointer;
   color: whitesmoke;
   display: none;
+
+
 }
 
-@media(max-width: 786px) {
+.logo {
+  position: fixed;
+  float: left;
+  z-index: 1000;
+}
 
+.logo a {
+  background: url(/img/logo.png) top left no-repeat;
+  background-size: contain;
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 50px;
+  margin: 9px;
+  transition: 0.5s;
+}
+
+.logo a:hover {
+  width: 120px;
+  height: 70px;
+}
+
+
+
+@media (max-width: 786px) {
   .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
+    position: fixed;
+    top: 0;
   }
 
   nav ul {
-        max-height: 0px;
-        background:  rgba(6, 25, 102, 0.9);
-        color: whitesmoke;
+    max-height: 0px;
+    background: rgba(6, 25, 102, 0.9);
+  }
+
+  nav ul li a {
+    color: whitesmoke;
   }
 
   nav.blue ul {
-        background: rgba(6, 25, 102, 0.9);
-       
+    background: rgba(6, 25, 102, 0.9);
   }
 
-
-
   .showing {
-        max-height: 34em;
+    max-height: 34em;
   }
 
   nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px;
-        text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
   }
 
   .menu-icon {
-        display: block;
+    display: block;
   }
 
 }
 
+
+@media screen and (min-width: 991px) {
+  .logo a {
+    width: 180px;
+    height: 80px;
+  }
+
+  .logo a:hover {
+    width: 200px;
+    height: 100px;
+  }
+}

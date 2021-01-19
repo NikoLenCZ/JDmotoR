@@ -3,9 +3,14 @@
   color: whitesmoke;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: #222;
+  color: #2c2929;
   font: 18px/30px "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .main-container {
@@ -14,70 +19,54 @@ body {
 }
 
 section {
-  padding: 20px 10px;
+  padding: 80px 0 0 0;
 }
 
-@media screen and (min-width: 1200px) {
-  .main-container {
-    max-width: 1170px;
-  }
-
-  section {
-    padding: 30px 20px;
-  }
-
-  section.firm {
-    margin-top: 40px;
-  }
-
-  section.firm p {
-    max-width: 50%;
-  }
-}
-.mtb-small {
-  margin: 24px 0;
+section.contact {
+  padding-bottom: 40px;
 }
 
-p {
-  margin: 11px;
+section p, section ol {
+  padding: 10px 20px;
 }
 
-ol.process {
-  list-style-type: decimal;
-  max-width: 45%;
-  margin: 11px;
-  display: inline-block;
-}
-
-ol.process li {
-  padding: 5px 0 5px 5px;
+.img-responsive {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
 }
 
 section .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-.container p {
+.second {
+  order: 2;
+}
+
+.mtb-small {
+  margin: 24px 0;
+}
+
+ol.process li {
+  padding: 10px 0 10px 5px;
+}
+
+ol.process {
+  list-style-type: decimal;
+  margin-left: 20px;
   display: inline-block;
 }
 
-.img-responsive {
-  max-width: 40%;
-  height: auto;
-  margin: 11px;
-}
-
-.container.address {
-  justify-content: space-around;
-  margin: 40px 0 60px 0;
+.address {
+  text-align: center;
 }
 
 address {
-  display: inline-block;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
   font-style: italic;
 }
 
@@ -85,7 +74,50 @@ address a {
   color: #920b0f;
 }
 
-iframe {
-  width: 500px;
-  height: 400px;
+@media screen and (min-width: 768px) {
+  section .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container p {
+    display: inline-block;
+  }
+
+  .container.address {
+    justify-content: space-around;
+    margin: 40px 0 60px 0;
+  }
+
+  .img-responsive {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .img-responsive.first {
+    margin: 30px 20px 0 10px;
+  }
+
+  .second {
+    order: 1;
+    margin: 30px 20px 0 20px;
+  }
+
+  ol.process {
+    order: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-container {
+    max-width: 1170px;
+  }
+
+  section.firm p {
+    max-width: 50%;
+  }
+
+  ol.process {
+    max-width: 45%;
+  }
 }

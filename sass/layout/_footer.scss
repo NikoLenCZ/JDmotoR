@@ -1,5 +1,9 @@
+section.pre-footer {
+  padding: 40px 0 20px 0;
+}
+
 footer, .pre-footer {
-  background-color: rgb(3, 3, 58); 
+  background-color: rgb(6, 25, 102);
   color: whitesmoke;
   margin: 0;
 }
@@ -11,15 +15,24 @@ footer p {
 }
 
 .pre-footer a{
+  text-decoration: none;
   color: whitesmoke;
 
 }
 
 .pre-footer ul {
-  display: inline-block;
   vertical-align: top;
 }
 
+.pre-footer ul li {
+  
+  display: inline-block;
+}
+
 .nav-footer {
-  margin: 0 30px;
+  margin: 0 20px;
+}
+
+ul.nav-footer li {
+padding: 10px 5px;
 }
