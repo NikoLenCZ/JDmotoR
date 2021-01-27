@@ -1,38 +1,21 @@
-section.pre-footer {
-  padding: 40px 0 20px 0;
-}
-
-footer, .pre-footer {
+footer {
   background-color: rgb(6, 25, 102);
   color: whitesmoke;
   margin: 0;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
 }
 
 footer p {
   margin: 0;
+  padding: 1.11em 2.21em;
+}
+
+@media screen and (min-width: 991px) {
+footer {
   text-align: end;
-  padding: 20px 40px;
+  font-size: 0.88em;
+}
 }
 
-.pre-footer a{
-  text-decoration: none;
-  color: whitesmoke;
-
-}
-
-.pre-footer ul {
-  vertical-align: top;
-}
-
-.pre-footer ul li {
-  
-  display: inline-block;
-}
-
-.nav-footer {
-  margin: 0 20px;
-}
-
-ul.nav-footer li {
-padding: 10px 5px;
-}

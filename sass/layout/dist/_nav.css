@@ -80,6 +80,7 @@ nav ul li a {
 
   nav ul li a {
     color: whitesmoke;
+    padding: 20px 40px;
   }
 
   nav.blue ul {
@@ -93,8 +94,16 @@ nav ul li a {
   nav ul li {
     box-sizing: border-box;
     width: 100%;
-    padding: 16px;
+    padding: 0;
     text-align: center;
+  }
+
+  nav ul li:last-child {
+    padding-bottom: 5px;
+  }
+
+  nav ul li:first-child {
+    padding-top: 5px;
   }
 
   .menu-icon {

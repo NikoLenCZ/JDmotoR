@@ -3,18 +3,19 @@
 }
 
 ::selection {
-  background-color: rgb(3, 3, 58); color: whitesmoke;
+  background-color: rgb(3, 3, 58);
+  color: whitesmoke;
 }
 
 html {
   scroll-behavior: smooth;
-  
+
 }
 
 body {
-color: rgb(44, 41, 41);
-font: 18px/30px 'Open Sans', sans-serif;
--webkit-font-smoothing: antialiased;
+  color: rgb(44, 41, 41);
+  font: 1.125em/1.875em 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .main-container {
@@ -23,30 +24,36 @@ font: 18px/30px 'Open Sans', sans-serif;
 }
 
 section {
-  padding: 80px 0 0 0;
+  padding: 5em 0 0 0;
 }
 
 section.contact {
-  padding-bottom: 40px;
-  
+  padding-bottom: 1.25em;
 }
 
-section p, section ol {
-  padding: 10px 20px;
+section.map {
+  margin-top: 0;
+  padding: 0;
+}
+
+section p,
+section ol {
+  padding: 0.625em 1.25em;
 }
 
 
 .img-responsive {
   width: 100%;
   height: auto;
-  margin-top: 30px;
- }
+  margin-top: 1.875em;
+}
 
- section .container {
+section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .second {
   order: 2;
@@ -54,25 +61,18 @@ section p, section ol {
 
 
 .mtb-small {
-  margin: 24px 0;
+  margin: 1.5em 0;
 }
 
 
-
-// p {
-//   margin: 0 11px 10px 11px;
-// }
-
-
-
 ol.process li {
-  padding: 10px 0 10px 5px;
+  padding: 0.625em 0 0.625em 0.313em;
 }
 
 
 ol.process {
   list-style-type: decimal;
-  margin-left: 20px;
+  margin-left: 1.25em;
   display: inline-block;
 }
 
@@ -88,76 +88,59 @@ address {
 }
 
 address a {
-    color: rgb(146, 11, 15);
-  }
-
-
-
-
-
-@media screen and (min-width: 460px) {
-  
+  color: rgb(146, 11, 15);
 }
 
+
+
 @media screen and (min-width: 768px) {
-  
+
   section .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .container p {
     display: inline-block;
   }
-  
+
 
   .container.address {
     justify-content: space-around;
-    margin: 40px 0 60px 0;
   }
 
   .img-responsive {
     max-width: 40%;
     height: auto;
-    
-   }
 
-   .img-responsive.first {
-    margin: 30px 20px 0 10px;
-   }
+  }
 
-   .second{
-     order: 1;
-     margin: 30px 20px 0 20px;
-   }
+  .img-responsive.first {
+    margin: 1.875em 1.25em 0 0.625em;
+  }
 
-   ol.process {
-     order: 2;
-   }
+  .second {
+    order: 1;
+    margin: 1.875em 1.25em 0 1.25em;
+  }
+
+  ol.process {
+    order: 2;
+  }
 }
 
-@media screen and (min-width: 991px) {
-
- 
-
-  
-}
 
 @media screen and (min-width: 1200px) {
   .main-container {
     max-width: 1170px;
   }
 
-  
   section.firm p {
     max-width: 50%;
   }
 
- ol.process {
-  max-width: 45%;
- }
-
- 
-
+  ol.process {
+    max-width: 45%;
+  }
 }

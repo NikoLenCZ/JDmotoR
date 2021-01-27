@@ -9,7 +9,7 @@ html {
 
 body {
   color: #2c2929;
-  font: 18px/30px "Open Sans", sans-serif;
+  font: 1.125em/1.875em "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,21 +19,27 @@ body {
 }
 
 section {
-  padding: 80px 0 0 0;
+  padding: 5em 0 0 0;
 }
 
 section.contact {
-  padding-bottom: 40px;
+  padding-bottom: 1.25em;
 }
 
-section p, section ol {
-  padding: 10px 20px;
+section.map {
+  margin-top: 0;
+  padding: 0;
+}
+
+section p,
+section ol {
+  padding: 0.625em 1.25em;
 }
 
 .img-responsive {
   width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 
 section .container {
@@ -47,16 +53,16 @@ section .container {
 }
 
 .mtb-small {
-  margin: 24px 0;
+  margin: 1.5em 0;
 }
 
 ol.process li {
-  padding: 10px 0 10px 5px;
+  padding: 0.625em 0 0.625em 0.313em;
 }
 
 ol.process {
   list-style-type: decimal;
-  margin-left: 20px;
+  margin-left: 1.25em;
   display: inline-block;
 }
 
@@ -87,7 +93,6 @@ address a {
 
   .container.address {
     justify-content: space-around;
-    margin: 40px 0 60px 0;
   }
 
   .img-responsive {
@@ -96,12 +101,12 @@ address a {
   }
 
   .img-responsive.first {
-    margin: 30px 20px 0 10px;
+    margin: 1.875em 1.25em 0 0.625em;
   }
 
   .second {
     order: 1;
-    margin: 30px 20px 0 20px;
+    margin: 1.875em 1.25em 0 1.25em;
   }
 
   ol.process {
