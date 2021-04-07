@@ -3,8 +3,8 @@
 }
 
 ::selection {
-  background-color: rgb(3, 3, 58);
-  color: whitesmoke;
+  background-color: $selection-color;
+  color: $secondary-color;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  color: rgb(44, 41, 41);
+  color: $text-color;
   font: 1.125em/1.875em 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -88,14 +88,14 @@ address {
 }
 
 address a {
-  color: rgb(146, 11, 15);
+  color: $links-color;
 }
 
 
 
 @media screen and (min-width: 768px) {
 
-  section .container {
+  .firm .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -111,23 +111,47 @@ address a {
   }
 
   .img-responsive {
-    max-width: 40%;
-    height: auto;
-
+    vertical-align: middle;
   }
 
   .img-responsive.first {
+    max-width: 40%;
+    height: auto;
     margin: 1.875em 1.25em 0 0.625em;
   }
 
-  .second {
+  ol.process {
     order: 1;
+  }
+
+  .img-responsive.second {
+    max-width: 80%;
+    order: 2;
     margin: 1.875em 1.25em 0 1.25em;
   }
+
+  
+}
+
+@media screen and (min-width: 1000px) {
+
+  section .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-responsive.second {
+    max-width: 40%;
+    order: 1;
+    margin: 0 1.25em 0 1.25em;
+  }
+
 
   ol.process {
     order: 2;
   }
+
 }
 
 

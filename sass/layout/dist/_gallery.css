@@ -1,6 +1,6 @@
 section.gallery {
   padding: 0;
-  margin: 2.2em 0;
+  margin: 2.2em auto;
 }
 
 .gallery-container {
@@ -9,7 +9,7 @@ section.gallery {
 }
 
 .gallery-header {
-  background-image: linear-gradient(#e3e5e9e8, white);
+  background-image: linear-gradient(#e3e5e9e8, #ffffff);
   max-height: 15em;
   width: auto;
 }
@@ -40,6 +40,25 @@ section.gallery {
   margin-bottom: 1.111em;
 }
 
+#overlay {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+#overlay img {
+  max-width: 100%;
+  align-self: center;
+  padding: 4em;
+}
+
 @media screen and (min-width: 500px) {
   .gallery {
     display: flex;
@@ -58,8 +77,8 @@ section.gallery {
   }
 
   .all-title {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
     padding: 10px 0;
     position: absolute;
     width: 100%;
@@ -75,7 +94,7 @@ section.gallery {
   }
 
   .all-title a {
-    color: white;
+    color: #ffffff;
   }
 
   .title-copy {
@@ -84,7 +103,7 @@ section.gallery {
 }
 @media screen and (min-width: 500px) and (max-width: 1001px) {
   .gallery {
-    box-shadow: 0px 0px 46px -2px rgba(0, 0, 0, 0.75);
+    filter: drop-shadow(0 14px 30px #333);
   }
 }
 @media screen and (min-width: 991px) {
@@ -93,10 +112,14 @@ section.gallery {
   }
 }
 @media screen and (min-width: 1001px) {
+  section.gallery {
+    padding-left: 1.11em;
+  }
+
   .photo {
     width: 32%;
     margin: 0.2em;
-    box-shadow: 14px 11px 43px 3px rgba(0, 0, 0, 0.49);
+    filter: drop-shadow(0px 0px 30px #333);
   }
 }
 @media screen and (min-width: 1200px) {

@@ -5,15 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="javascript" href="/script.js">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
+
   <title>JDmotoR</title>
 </head>
 
@@ -22,16 +21,19 @@
 
 <header class="header">
   <nav>
-    <div class="menu-icon"><i class="fa fa-bars fa-2x"></i>
+    <div class="menu-icon"><span class="menu-title">MENU</span>
+      <img src="img/double-arrow-bottom.svg" alt="menu icon" width="16" height="16" id="menu">
     </div>
     <div class="logo"><a href="#">JDmotoR</a>
     </div>
     <ul class="menu">
-      <li><a href="index.html#firm">O firmě</a></li>
+      <li><a href="index.html#firm">O mě</a></li>
       <li><a href="index.html#after">Proces</a></li>
-      <li><a href="index.html#info">Důležité info</a></li>
-      <li><a href="#">Příklady</a></li>
-      <li><a href="fotogalerie.html">Fotogalerie</a></li>
+      <li><a href="index.html#info">Info</a></li>
+      <li><a href="others.html">Další služby</a></li>
+      <li><a href="price.html">Ceník</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="photogallery.html">Fotogalerie</a></li>
       <li><a href="index.html#contact">Kontakt</a></li>
     </ul>
   </nav>
@@ -41,9 +43,9 @@
 </header>
 <main class="main-container">
   <section class="firm" id="firm">
-    <h2>O firmě JDmotoR</h2>
+    <h2>JDmotoR</h2>
     <div class="container">
-      <p>JDmotoR se zabývá mimo jiné čištěním a repasí karburátorů starších motocyklů. Především se specializuji na
+      <p>Zabývám se mimo jiné na čištěním a repasí karburátorů starších motocyklů. Především se specializuji na
         japonské stroje 80. a 90. let. Pokud není zásadní problém, tak motor přivedeme do chodu včetně seřízení.</p>
       <img class="img-responsive first" src="/img/carburators.jpg" alt="karburátory">
     </div>
@@ -87,7 +89,7 @@
     <h2>
       Kontakt
     </h2>
-    <h3>Nutné se domluvit na opravě předem</h3>
+    <h3>Nutné domluvit se na opravě předem</h3>
     <div class="container address">
       <address>
         <p>
@@ -110,14 +112,17 @@
   </section>
 </main>
 <section class="map">
-  <iframe style="border:none; margin-bottom: -10px;" src="https://frame.mapy.cz/s/dujehasate" width="100%" height="450" frameborder="0"></iframe> 
+  <iframe style="border:none; margin-bottom: -10px;" src="https://frame.mapy.cz/s/dujehasate" width="100%" height="450" frameborder="0"></iframe>
 </section>
 <footer>
-  <p>&copy; 2021 Lenka Nikodýmová, all rights reserved</p>
+  <p>&copy; 2021 JDmotoR, made with <i class="fa fa-heart"></i> by Lenka Nikodýmová, all rights reserved</p>
 </footer>
 
 
-<script type="text/javascript">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="script.js"></script>
+
+<!-- <script type="text/javascript">
   // Menu-toggle button
 
   $(document).ready(function () {
@@ -136,7 +141,7 @@
     }
   })
 
-</script>
+</script> -->
 
 </body>
 
