@@ -21,7 +21,7 @@ h1 {
   display: inline-block;
   text-align: center;
   color: #040431;
-  font-size: 2em;
+  font-size: 3rem;
   line-height: 1.25em;
   font-weight: bold;
   position: relative;
@@ -47,6 +47,11 @@ h3 {
   font-weight: bolder;
   padding: 0 0.6em 0.5em 0.6em;
   text-align: center;
+}
+
+p a {
+  color: #ed1c24;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 460px) {

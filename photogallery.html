@@ -5,13 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="javascript" href="/script.js">
+  <link rel="javascript" href="js/script.js">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
+
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
+
   
   <title>JDmotoR fotogalerie</title>
 </head>
@@ -24,17 +28,17 @@
     <div class="menu-icon"><span class="menu-title">MENU</span>
       <img src="img/double-arrow-bottom.svg" alt="menu icon" width="16" height="16" id="menu">
     </div>
-    <div class="logo"><a href="index.html">JDmotoR</a>
+    <div class="logo"><a href="home.html">JDmotoR</a>
     </div>
     <ul class="menu">
-      <li><a href="index.html#firm">O mě</a></li>
-      <li><a href="index.html#after">Proces</a></li>
-      <li><a href="index.html#info">Info</a></li>
+      <li><a href="home.html#firm">O mě</a></li>
+      <li><a href="home.html#after">Proces</a></li>
+      <li><a href="home.html#info">Info</a></li>
       <li><a href="others.html">Další služby</a></li>
       <li><a href="price.html">Ceník</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="photogallery.html">Fotogalerie</a></li>
-      <li><a href="index.html#contact">Kontakt</a></li>
+      <li><a href="home.html#contact">Kontakt</a></li>
     </ul>
   </nav>
   <div class="gallery-main-header">
@@ -44,7 +48,7 @@
 <main class="gallery-container">
   <section class="gallery">
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-016.jpg" target="_blank">
+        <a href="img-gallery/HondaCBX1000-service-016.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-016.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">Honda CBX 1000<br>
@@ -54,7 +58,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-019.jpg">
+        <a href="img-gallery/HondaCBX1000-service-019.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-019.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -65,7 +69,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-020.jpg">
+        <a href="img-gallery/HondaCBX1000-service-020.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-020.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -76,7 +80,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-021.jpg">
+        <a href="img-gallery/HondaCBX1000-service-021.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-021.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -87,7 +91,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-022.jpg">
+        <a href="img-gallery/HondaCBX1000-service-022.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-022.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -98,7 +102,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-023.jpg">
+        <a href="img-gallery/HondaCBX1000-service-023.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-023.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -109,7 +113,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaCBX1000-service-028.jpg">
+        <a href="img-gallery/HondaCBX1000-service-028.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaCBX1000-service-028.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -120,7 +124,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/HondaTransalpXL650V-service-04.jpg">
+        <a href="img-gallery/HondaTransalpXL650V-service-04.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/HondaTransalpXL650V-service-04.jpg" alt="Honda Transalp 650V"></a>
         <div class="all-title">
           <p class="title">
@@ -131,7 +135,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin,CBX1000-01.jpg">
+        <a href="img-gallery/web-Carb-Keihin,CBX1000-01.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin,CBX1000-01.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -142,7 +146,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin-CBX1000-02.jpg">
+        <a href="img-gallery/web-Carb-Keihin-CBX1000-02.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin-CBX1000-02.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">Honda CBX 1000<br>
@@ -152,7 +156,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin-CBX1000-03.jpg">
+        <a href="img-gallery/web-Carb-Keihin-CBX1000-03.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin-CBX1000-03.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -163,7 +167,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin-CBX1000-04.jpg">
+        <a href="img-gallery/web-Carb-Keihin-CBX1000-04.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin-CBX1000-04.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -174,7 +178,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin-CBX1000-05.jpg">
+        <a href="img-gallery/web-Carb-Keihin-CBX1000-05.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin-CBX1000-05.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -185,7 +189,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-Carb-Keihin-CBX1000-06.jpg">
+        <a href="img-gallery/web-Carb-Keihin-CBX1000-06.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-Carb-Keihin-CBX1000-06.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -196,7 +200,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-HondaCB750K-Keihin-1.jpg">
+        <a href="img-gallery/web-HondaCB750K-Keihin-1.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-HondaCB750K-Keihin-1.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -207,7 +211,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-HondaCB750K-Keihin.jpg">
+        <a href="img-gallery/web-HondaCB750K-Keihin.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-HondaCB750K-Keihin.jpg" alt="Honda CB 750K"></a>
         <div class="all-title">
           <p class="title">
@@ -218,7 +222,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-service-carburetor-JD.jpg">
+        <a href="img-gallery/web-service-carburetor-JD.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-service-carburetor-JD.jpg" alt="Honda CBX 1000"></a>
         <div class="all-title">
           <p class="title">
@@ -229,7 +233,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-SuzukiGSXR750-VM29SS.jpg">
+        <a href="img-gallery/web-SuzukiGSXR750-VM29SS.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-SuzukiGSXR750-VM29SS.jpg" alt="Suzuki GSXR 750"></a>
         <div class="all-title">
           <p class="title">
@@ -240,7 +244,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/web-ultrazvuk.jpg">
+        <a href="img-gallery/web-ultrazvuk.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/web-ultrazvuk.jpg" alt="Ultrazvuk"></a>
         <div class="all-title">
           <p class="title">
@@ -251,7 +255,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/YamahaXJ550-carburetor-01.jpg">
+        <a href="img-gallery/YamahaXJ550-carburetor-01.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/YamahaXJ550-carburetor-01.jpg" alt="Yamaha XJ 550"></a>
         <div class="all-title">
           <p class="title">
@@ -262,7 +266,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/YamahaXJ550-carburetor-02.jpg">
+        <a href="img-gallery/YamahaXJ550-carburetor-02.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/YamahaXJ550-carburetor-02.jpg" alt="Yamaha XJ 550"></a>
         <div class="all-title">
           <p class="title">
@@ -273,7 +277,7 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/YamahaXJ550-carburetor-04.jpg">
+        <a href="img-gallery/YamahaXJ550-carburetor-04.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
         <img src="img-gallery/YamahaXJ550-carburetor-04.jpg" alt="Yamaha XJ 550"></a>
         <div class="all-title">
           <p class="title">
@@ -284,49 +288,81 @@
       </div>
 
       <div class="photo">
-        <a href="img-gallery/blog-title-HondaCBX1000.jpg">
-        <img src="img-gallery/blog-title-HondaCBX1000.jpg" alt="Yamaha XJ 550"></a>
+        <a href="img-gallery/blog-title-HondaCBX1000.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
+        <img src="img-gallery/thumb-blog-title-HondaCBX1000.jpg" alt="Honda CBX1000"></a>
         <div class="all-title">
           <p class="title">
-            Yamaha XJ 550<br>
+            Honda CBX1000<br>
             <span class="title-copy">Photo &copy; JDmotoR</span>
           </p>
         </div>
       </div>
 
       <div class="photo">
-        <a href="img-gallery/blog-1-HondaCBX1000.jpg">
-        <img src="img-gallery/blog-1-HondaCBX1000.jpg" alt="Yamaha XJ 550"></a>
+        <a href="img-gallery/blog-1-HondaCBX1000.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
+        <img src="img-gallery/blog-1-HondaCBX1000.jpg" alt="Honda CBX1000"></a>
         <div class="all-title">
           <p class="title">
-            Yamaha XJ 550<br>
+            Honda CBX1000<br>
             <span class="title-copy">Photo &copy; JDmotoR</span>
           </p>
         </div>
       </div>
 
       <div class="photo">
-        <a href="img-gallery/blog-2-KeysterCBX1000.jpg">
-        <img src="img-gallery/blog-2-KeysterCBX1000.jpg" alt="Yamaha XJ 550"></a>
+        <a href="img-gallery/blog-2-KeysterCBX1000.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
+        <img src="img-gallery/blog-2-KeysterCBX1000.jpg" alt="Honda CBX1000"></a>
         <div class="all-title">
           <p class="title">
-            Yamaha XJ 550<br>
+            Honda CBX1000<br>
             <span class="title-copy">Photo &copy; JDmotoR</span>
           </p>
         </div>
       </div>
 
       <div class="photo">
-        <a href="img-gallery/blog-3-HondaCBX1000.jpg">
-        <img src="img-gallery/blog-3-HondaCBX1000.jpg" alt="Yamaha XJ 550"></a>
+        <a href="img-gallery/blog-3-HondaCBX1000.jpg" data-lightbox="mygallery" data-title="Honda CBX 1000">
+        <img src="img-gallery/blog-3-HondaCBX1000.jpg" alt="Honda CBX1000"></a>
         <div class="all-title">
           <p class="title">
-            Yamaha XJ 550<br>
+            Honda CBX1000<br>
             <span class="title-copy">Photo &copy; JDmotoR</span>
           </p>
         </div>
       </div>
 
+      <div class="photo">
+        <a href="img-gallery/SuzukiGSX1400-022.jpg" data-lightbox="mygallery" data-title="Suzuki GSX 1400">
+        <img src="img-gallery/SuzukiGSX1400-022.jpg" alt="Suzuki GSX 1400"></a>
+        <div class="all-title">
+          <p class="title">
+            Suzuki GSX 1400<br>
+            <span class="title-copy">Photo by &copy; JDmotoR</span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="photo">
+        <a href="img-gallery/GSX1400-tlumice-5.jpg" data-lightbox="mygallery" data-title="Suzuki GSX 1400">
+        <img src="img-gallery/GSX1400-tlumice-5.jpg" alt="Suzuki GSX 1400"></a>
+        <div class="all-title">
+          <p class="title">
+            Suzuki GSX 1400<br>
+            <span class="title-copy">Photo &copy; JDmotoR</span>
+          </p>
+        </div>
+      </div>
+      
+      <div class="photo">
+        <a href="img-gallery/GSX1400-tlumice-2.JPG" data-lightbox="mygallery" data-title="Suzuki GSX 1400">
+        <img src="img-gallery/GSX1400-tlumice-2.JPG" alt="Suzuki GSX 1400"></a>
+        <div class="all-title">
+          <p class="title">
+            Suzuki GSX 1400<br>
+            <span class="title-copy">Photo &copy; JDmotoR</span>
+          </p>
+        </div>
+      </div>
   
   </section>
  
@@ -337,7 +373,8 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 

@@ -1,3 +1,36 @@
+/* COLORS */
+
+$primary-color: #194698;
+$secondary-color: whitesmoke;
+$text-color: #2c2929;
+$links-color: #ed1c24;
+$navigation-text: #030e3f;
+$selection-color: #03033a;
+$title-text: #ffffff;
+$title-background: rgba(0, 0, 0, 0.65);
+$gallery-shadow:  #000000;
+$headline-color: #040431;
+$gallery-gradient: linear-gradient(#e3e5e9e8, #ffffff);
+$main-gradient: linear-gradient(rgba(255, 255, 255, 0.363), white);
+
+
+/* /COLORS */
+
+.blog-main-header {
+  padding: 4em 0 0 0;
+  height: 11.111em;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media screen and (min-width: 991px) {
+  .blog-main-header {
+    max-height: 20em;
+  }
+}
+
 article.box {
 display: flex;
 flex-direction: column;
@@ -20,21 +53,27 @@ margin-right: auto;
 }
 
 .box-body a {
-  margin: 1.5em 2.5em 0 0;
+  margin: 1.5em 0;
   padding: 0.5rem;
-  align-self: flex-end;
   color: $links-color;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
   border: 2px solid $links-color;
   border-radius: 6px;
+  transition: 0.5s;
+  align-self: center;
+}
+
+.box-body a:hover {
+color: $secondary-color;
+background-color: darkred;
+border-color: darkred;
 }
 
 p.text-info {
   text-overflow: ellipsis;
   overflow: hidden;
- 
 }
 
 
@@ -61,9 +100,87 @@ section#banner {
 section .banner {
   padding: 0;
   width: 100%;
-  
+ 
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+
+@media screen and (max-width: 618px) {
+.padding-top-large {
+  padding-top: 6em;
+}
+
+.banner-gsx1400 {
+  margin-top: 2em;
+}
 
 }
+
+@media screen and (max-width: 824px) {
+.blog-main-header.padding-top-large {
+  >h1 {
+
+      font-size: 2.3rem;
+    }
+  }
+}
+
+
+
+.banner-honda {
+  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-xs.png);
+}
+
+@media screen and (min-width: 787px) {
+  .banner-honda {
+  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-md.png);
+}
+}
+
+@media screen and (min-width: 1199px) {
+  .banner-honda {
+  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000.png);
+}
+}
+
+.banner-gasket {
+  background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-xs.png);
+}
+
+@media screen and (min-width: 787px) {
+  .banner-gasket {
+  background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-md.png);
+}
+}
+
+@media screen and (min-width: 1199px) {
+  .banner-gasket {
+  background-image: url(/img-gallery/banner-blog-title-Carb-Keihin.png);
+}
+}
+
+.banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400-xs.png);
+}
+
+@media screen and (min-width: 787px) {
+  .banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400-md.png);
+}
+}
+
+@media screen and (min-width: 1199px) {
+  .banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400.png);
+}
+}
+
+
 
 @media screen and (min-width: 787px) {
 
@@ -85,4 +202,41 @@ article.box {
   }
 
 
+  .box-body a {
+    margin: 1.5em 2.5em 0 0;
+    align-self: flex-end;
+  }
+
+
 }
+
+.blog-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 2em;
+a {
+  text-decoration: none;
+color: $links-color;
+font-weight: bold;
+font-style: italic;
+padding: 0.5rem;
+border: 2px solid $links-color;
+border-radius: 6px;
+transition: 0.5s;
+}
+a:hover {
+  color: $secondary-color;
+background-color: darkred;
+border-color: darkred;
+}
+}
+
+.blog-links.first {
+  justify-content: flex-end;
+}
+
+.blog-links.last {
+  justify-content: flex-start;
+}
+
+

@@ -1,7 +1,28 @@
+// .header {
+//   background: url(/img/header-photo.jpg) top no-repeat;
+//   background-size: cover;
+//   width: 100%;
+// }
+
 .header {
-  background: url(/img/header-photo.jpg) top no-repeat;
+  background-image: url("/img/header-photo-xs.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  background-position: center center;
+}
+
+@media screen and (min-width: 767px) {
+  .header {
+    background-image: url("/img/header-photo-md.jpg");
+    background-position: top left;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .header {
+    background-image: url("/img/header-photo-xl.jpg");
+  
+  }
 }
 
 .main-header {

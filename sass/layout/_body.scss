@@ -64,6 +64,10 @@ section .container {
   margin: 1.5em 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 
 ol.process li {
   padding: 0.625em 0 0.625em 0.313em;
@@ -76,20 +80,21 @@ ol.process {
   display: inline-block;
 }
 
-.address {
-  text-align: center;
-}
 
 address {
   display: flex;
   flex-direction: column;
   font-style: italic;
-
 }
 
 address a {
   color: $links-color;
 }
+
+.address p {
+  text-align: center;
+}
+
 
 
 
@@ -105,10 +110,7 @@ address a {
     display: inline-block;
   }
 
-
-  .container.address {
-    justify-content: space-around;
-  }
+  
 
   .img-responsive {
     vertical-align: middle;
@@ -130,10 +132,23 @@ address a {
     margin: 1.875em 1.25em 0 1.25em;
   }
 
-  
+
 }
 
 @media screen and (min-width: 1000px) {
+
+  .container.address {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  
+  .address p {
+    text-align: left;
+  }
+
+  
 
   section .container {
     flex-direction: row;
@@ -150,6 +165,13 @@ address a {
 
   ol.process {
     order: 2;
+  }
+
+  .container.address {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
   }
 
 }
