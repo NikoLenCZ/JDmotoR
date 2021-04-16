@@ -96,6 +96,35 @@ address a {
 }
 
 
+.others i.ico img {
+ max-width: 150px;
+}
+
+// .all-cards {
+// display: flexbox;
+// flex-direction: column;
+// justify-content: space-between;
+// }
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+}
+
+.card {
+  padding: 3rem;
+  width: 50%;
+  margin: 0;
+}
+.card-body {
+
+padding: .5rem 1.5rem;
+}
+
+
+
 
 
 @media screen and (min-width: 768px) {
