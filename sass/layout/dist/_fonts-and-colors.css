@@ -21,7 +21,7 @@ h1 {
   display: inline-block;
   text-align: center;
   color: #040431;
-  font-size: 3rem;
+  font-size: 2em;
   line-height: 1.25em;
   font-weight: bold;
   position: relative;
@@ -35,10 +35,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
-  line-height: 1.1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: bold;
-  padding: 0.8em 0;
+  padding: 0.8em 0.5em;
   text-align: center;
 }
 

@@ -35,8 +35,3 @@
     height: 700px;
   }
 }
-@media screen and (min-width: 1380px) {
-  .main-header {
-    height: 900px;
-  }
-}

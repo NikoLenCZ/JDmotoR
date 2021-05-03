@@ -71,7 +71,7 @@ h1 {
   display: inline-block;
   text-align: center;
   color: #040431;
-  font-size: 3rem;
+  font-size: 2em;
   line-height: 1.25em;
   font-weight: bold;
   position: relative;
@@ -89,10 +89,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2em;
-  line-height: 1.1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-weight: bold;
-  padding: 0.8em 0;
+  padding: 0.8em 0.5em;
   text-align: center;
 }
 
@@ -178,7 +178,7 @@ html {
 
 body {
   color: #2c2929;
-  font: 1.125em/1.875em "Open Sans", sans-serif;
+  font: 1em "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -202,7 +202,7 @@ section.map {
 
 section p,
 section ol {
-  padding: 0.625em 1.25em;
+  padding: 1rem 1.3rem;
 }
 
 .img-responsive {
@@ -282,7 +282,41 @@ address a {
 }
 
 .others i.ico img {
-  max-width: 150px;
+  max-height: 160px;
+  -webkit-border-radius: 20px;
+     -moz-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+     -moz-box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+          box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+}
+
+.all-cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .card {
@@ -291,27 +325,49 @@ address a {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-align-content: space-between;
       -ms-flex-line-pack: justify;
           align-content: space-between;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-     -moz-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.card {
-  padding: 3rem;
-  width: 50%;
+  padding: 1rem 1.3rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin: 0;
 }
 
-.card-body {
-  padding: 0.5rem 1.5rem;
+.card-body p {
+  padding: 0;
+}
+
+.card ul {
+  display: inline-block;
+}
+
+.card ul li {
+  line-height: 2em;
+}
+
+.card-body ul li {
+  list-style-image: url(/img/list.png);
+}
+
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -431,6 +487,31 @@ address a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .card {
+    width: 100%;
+    padding: 3rem 1.3rem 3rem 1.3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .card-body {
+    width: 70%;
+  }
+
+  .card-img {
+    width: 30%;
+    margin-top: 0.5rem;
+  }
+
+  h3.text-feft-lg {
+    text-align: left;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main-container {
@@ -495,11 +576,6 @@ address a {
 @media screen and (min-width: 1200px) {
   .main-header {
     height: 700px;
-  }
-}
-@media screen and (min-width: 1380px) {
-  .main-header {
-    height: 900px;
   }
 }
 footer {
@@ -1163,7 +1239,7 @@ table {
 }
 
 table, th, td {
-  border: 1px #bcd0f4 solid;
+  border-bottom: 1px #bcd0f4 solid;
   border-collapse: collapse;
 }
 
@@ -1214,7 +1290,7 @@ p.table-alert {
 }
 
 section.tab {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 750px) {

@@ -8,7 +8,7 @@ table {
 }
 
 table, th, td {
-  border: 1px #bcd0f4 solid;
+  border-bottom: 1px #bcd0f4 solid;
   border-collapse: collapse;
 }
 
@@ -57,7 +57,7 @@ p.table-alert {
 }
 
 section.tab {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 750px) {

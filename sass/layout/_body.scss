@@ -14,7 +14,7 @@ html {
 
 body {
   color: $text-color;
-  font: 1.125em/1.875em 'Open Sans', sans-serif;
+  font: 1em 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,7 +38,7 @@ section.map {
 
 section p,
 section ol {
-  padding: 0.625em 1.25em;
+  padding: 1rem 1.3rem;
 }
 
 
@@ -97,31 +97,60 @@ address a {
 
 
 .others i.ico img {
- max-width: 150px;
+ max-height: 160px;
+ border-radius: 20px;
+box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+
 }
 
-// .all-cards {
-// display: flexbox;
-// flex-direction: column;
-// justify-content: space-between;
-// }
+
+
+.all-cards {
+display: flex;
+justify-content: center;
+flex-direction: row;
+align-items: start;
+flex-wrap: wrap;
+}
 
 .card {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
-  align-items: stretch;
-}
-
-.card {
-  padding: 3rem;
-  width: 50%;
+  padding: 1rem 1.3rem;
+  justify-content: start;
   margin: 0;
 }
-.card-body {
 
-padding: .5rem 1.5rem;
+.card-body p {
+ padding: 0;
 }
+
+
+.card ul {
+  display: inline-block;
+}
+.card ul li {
+  line-height: 2em;
+}
+
+.card-body ul li {
+  list-style-image: url(/img/list.png);
+   }
+
+
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+// .card-body p, .card-body h3, .card-body ul {
+// text-align: left;
+// padding: 0 2.5rem 0 1.5rem;
+// }
 
 
 
@@ -139,7 +168,7 @@ padding: .5rem 1.5rem;
     display: inline-block;
   }
 
-  
+
 
   .img-responsive {
     vertical-align: middle;
@@ -161,6 +190,7 @@ padding: .5rem 1.5rem;
     margin: 1.875em 1.25em 0 1.25em;
   }
 
+  
 
 }
 
@@ -203,6 +233,25 @@ padding: .5rem 1.5rem;
     justify-content: space-between;
   }
 
+
+  .card {
+    width: 100%;
+    padding: 3rem 1.3rem 3rem 1.3rem;
+    flex-direction: row;
+  }
+  
+
+  .card-body {
+    width: 70%;
+  }
+  .card-img {
+    width: 30%;
+    margin-top: 0.5rem;
+  }
+ 
+  h3.text-feft-lg {
+    text-align: left;
+  }
 }
 
 

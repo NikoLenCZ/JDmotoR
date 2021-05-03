@@ -11,7 +11,7 @@ width: 100%;
 }
 
 table, th, td {
-  border: 1px lighten($primary-color, $amount: 50) solid;
+  border-bottom: 1px lighten($primary-color, $amount: 50) solid;
   border-collapse: collapse;
 
 }
@@ -63,7 +63,7 @@ p.table-alert {
 }
 
 section.tab {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
  
 }
 
