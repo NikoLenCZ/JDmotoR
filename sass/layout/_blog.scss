@@ -134,49 +134,71 @@ section .banner {
   background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-xs.png);
 }
 
-@media screen and (min-width: 787px) {
-  .banner-honda {
-  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-md.png);
-}
-}
-
-@media screen and (min-width: 1199px) {
-  .banner-honda {
-  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000.png);
-}
+.banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400-xs.png);
 }
 
 .banner-gasket {
   background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-xs.png);
 }
 
+.banner-Z1300{
+  background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300-xs.png)
+}
+
+.banner-F4 {
+  background-image: url(/img-gallery/banner-blog-title-MV-F4-xs.png);
+}
+
+
+
 @media screen and (min-width: 787px) {
+
+  .banner-honda {
+    background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-md.png);
+  }
+
   .banner-gasket {
   background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-md.png);
 }
+
+.banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400-md.png);
+}
+.banner-Z1300{
+  background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300-md.png)
+}
+
+.banner-F4 {
+  background-image: url(/img-gallery/banner-blog-title-MV-F4-md.png);
+}
+
 }
 
 @media screen and (min-width: 1199px) {
   .banner-gasket {
   background-image: url(/img-gallery/banner-blog-title-Carb-Keihin.png);
 }
+
+.banner-honda {
+  background-image: url(/img-gallery/banner-blog-title-honda-cbx1000.png);
 }
+
 
 .banner-gsx1400 {
-  background-image: url(/img-gallery/banner-blog-title-GSX-1400-xs.png);
-}
-
-@media screen and (min-width: 787px) {
-  .banner-gsx1400 {
-  background-image: url(/img-gallery/banner-blog-title-GSX-1400-md.png);
-}
-}
-
-@media screen and (min-width: 1199px) {
-  .banner-gsx1400 {
   background-image: url(/img-gallery/banner-blog-title-GSX-1400.png);
 }
+
+.banner-Z1300{
+  background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300.png)
 }
+
+.banner-F4 {
+  background-image: url(/img-gallery/banner-blog-title-MV-F4.png);
+}
+}
+
+
 
 
 

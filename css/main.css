@@ -76,7 +76,7 @@ h1 {
   font-weight: bold;
   position: relative;
   z-index: 10;
-  padding: 0.8em 0.3em;
+  padding: 1.8em 0.2em;
 }
 
 .main-header h1 {
@@ -99,8 +99,12 @@ h2 {
 h3 {
   font-size: 1.1em;
   font-weight: bolder;
-  padding: 0 0.6em 0.5em 0.6em;
+  padding: 0 0.6em 0.8em 0.6em;
   text-align: center;
+}
+
+.card-body h3 {
+  padding: 0 0 1.5em 0;
 }
 
 p a {
@@ -110,7 +114,7 @@ p a {
 
 @media screen and (min-width: 460px) {
   .main-header h1 {
-    font-size: 2.5em;
+    font-size: 2.29em;
     line-height: 1.4em;
   }
 }
@@ -160,7 +164,7 @@ p a {
 }
 @media screen and (min-width: 1380px) {
   .main-header h1 {
-    padding: 2em 1em;
+    padding: 1.5em 1em;
   }
 }
 ::-moz-selection {
@@ -292,31 +296,7 @@ address a {
 }
 
 .all-cards {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-     -moz-box-orient: horizontal;
-     -moz-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-  -webkit-align-items: start;
-     -moz-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  display: block;
 }
 
 .card {
@@ -348,19 +328,19 @@ address a {
 }
 
 .card-body p {
-  padding: 0;
-}
-
-.card ul {
-  display: inline-block;
+  padding: 0.5rem 0;
+  line-height: 1.4rem;
 }
 
 .card ul li {
   line-height: 2em;
+  background-position: left 5px;
 }
 
 .card-body ul li {
-  list-style-image: url(/img/list.png);
+  background: url(../img/list.png) left 6px no-repeat;
+  padding-left: 25px;
+  list-style: none;
 }
 
 .card-img {
@@ -368,6 +348,9 @@ address a {
   margin-right: auto;
   margin-top: 2.5rem;
   margin-bottom: 1.8rem;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -425,7 +408,7 @@ address a {
 }
 @media screen and (min-width: 1000px) {
   .container.address {
-    max-width: 50%;
+    width: 37%;
     margin-left: auto;
     margin-right: auto;
     -webkit-box-pack: justify;
@@ -502,15 +485,20 @@ address a {
 
   .card-body {
     width: 70%;
+    padding: 0 10px 0 10px;
   }
 
   .card-img {
-    width: 30%;
+    width: 25%;
     margin-top: 0.5rem;
   }
 
   h3.text-feft-lg {
     text-align: left;
+  }
+
+  .ico img {
+    margin-left: 20%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -573,9 +561,19 @@ address a {
     height: 500px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
+  .main-header {
+    height: 630px;
+  }
+}
+@media screen and (min-width: 1400px) {
   .main-header {
     height: 700px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-header {
+    height: 800px;
   }
 }
 footer {
@@ -1104,42 +1102,62 @@ section .banner {
   background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-xs.png);
 }
 
-@media screen and (min-width: 787px) {
-  .banner-honda {
-    background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-md.png);
-  }
+.banner-gsx1400 {
+  background-image: url(/img-gallery/banner-blog-title-GSX-1400-xs.png);
 }
-@media screen and (min-width: 1199px) {
-  .banner-honda {
-    background-image: url(/img-gallery/banner-blog-title-honda-cbx1000.png);
-  }
-}
+
 .banner-gasket {
   background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-xs.png);
 }
 
+.banner-Z1300 {
+  background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300-xs.png);
+}
+
+.banner-F4 {
+  background-image: url(/img-gallery/banner-blog-title-MV-F4-xs.png);
+}
+
 @media screen and (min-width: 787px) {
+  .banner-honda {
+    background-image: url(/img-gallery/banner-blog-title-honda-cbx1000-md.png);
+  }
+
   .banner-gasket {
     background-image: url(/img-gallery/banner-blog-title-Carb-Keihin-md.png);
+  }
+
+  .banner-gsx1400 {
+    background-image: url(/img-gallery/banner-blog-title-GSX-1400-md.png);
+  }
+
+  .banner-Z1300 {
+    background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300-md.png);
+  }
+
+  .banner-F4 {
+    background-image: url(/img-gallery/banner-blog-title-MV-F4-md.png);
   }
 }
 @media screen and (min-width: 1199px) {
   .banner-gasket {
     background-image: url(/img-gallery/banner-blog-title-Carb-Keihin.png);
   }
-}
-.banner-gsx1400 {
-  background-image: url(/img-gallery/banner-blog-title-GSX-1400-xs.png);
-}
 
-@media screen and (min-width: 787px) {
-  .banner-gsx1400 {
-    background-image: url(/img-gallery/banner-blog-title-GSX-1400-md.png);
+  .banner-honda {
+    background-image: url(/img-gallery/banner-blog-title-honda-cbx1000.png);
   }
-}
-@media screen and (min-width: 1199px) {
+
   .banner-gsx1400 {
     background-image: url(/img-gallery/banner-blog-title-GSX-1400.png);
+  }
+
+  .banner-Z1300 {
+    background-image: url(/img-gallery/banner-blog-title-Kawasai-Z1300.png);
+  }
+
+  .banner-F4 {
+    background-image: url(/img-gallery/banner-blog-title-MV-F4.png);
   }
 }
 @media screen and (min-width: 787px) {

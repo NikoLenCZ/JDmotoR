@@ -2,6 +2,19 @@
   // outline: 1px solid black;
 }
 
+$primary-color: #194698;
+$secondary-color: whitesmoke;
+$text-color: #2c2929;
+$links-color: #ed1c24;
+$navigation-text: #030e3f;
+$selection-color: #03033a;
+$title-text: #ffffff;
+$title-background: rgba(0, 0, 0, 0.65);
+$gallery-shadow:  #000000;
+$headline-color: #040431;
+$gallery-gradient: linear-gradient(#e3e5e9e8, #ffffff);
+$main-gradient: linear-gradient(rgba(255, 255, 255, 0.363), white);
+
 ::selection {
   background-color: $selection-color;
   color: $secondary-color;
@@ -106,11 +119,7 @@ box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
 
 
 .all-cards {
-display: flex;
-justify-content: center;
-flex-direction: row;
-align-items: start;
-flex-wrap: wrap;
+display: block;
 }
 
 .card {
@@ -124,20 +133,29 @@ flex-wrap: wrap;
 }
 
 .card-body p {
- padding: 0;
+ padding: 0.5rem 0;
+ line-height: 1.4rem;
 }
 
 
 .card ul {
-  display: inline-block;
+  // display: inline-block;
 }
+
 .card ul li {
   line-height: 2em;
+  
+    background-position: left 5px;
+
+  
+
 }
 
 .card-body ul li {
-  list-style-image: url(/img/list.png);
-   }
+   background: url(../img/list.png) left 6px no-repeat;
+   padding-left: 25px;
+  list-style: none;
+  }
 
 
 .card-img {
@@ -145,15 +163,8 @@ flex-wrap: wrap;
   margin-right: auto;
   margin-top: 2.5rem;
   margin-bottom: 1.8rem;
+  align-self: center;
 }
-
-// .card-body p, .card-body h3, .card-body ul {
-// text-align: left;
-// padding: 0 2.5rem 0 1.5rem;
-// }
-
-
-
 
 
 @media screen and (min-width: 768px) {
@@ -167,8 +178,6 @@ flex-wrap: wrap;
   .container p {
     display: inline-block;
   }
-
-
 
   .img-responsive {
     vertical-align: middle;
@@ -190,14 +199,12 @@ flex-wrap: wrap;
     margin: 1.875em 1.25em 0 1.25em;
   }
 
-  
-
 }
 
 @media screen and (min-width: 1000px) {
 
   .container.address {
-    max-width: 50%;
+    width: 37%;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -239,19 +246,25 @@ flex-wrap: wrap;
     padding: 3rem 1.3rem 3rem 1.3rem;
     flex-direction: row;
   }
-  
+
 
   .card-body {
     width: 70%;
+    padding: 0 10px 0 10px;
   }
   .card-img {
-    width: 30%;
+    width: 25%;
     margin-top: 0.5rem;
   }
- 
+
   h3.text-feft-lg {
     text-align: left;
   }
+
+  .ico img {
+    margin-left: 20%;
+  }
+
 }
 
 
@@ -267,4 +280,8 @@ flex-wrap: wrap;
   ol.process {
     max-width: 45%;
   }
+
+  // .card-body {
+  //   width: 85%;
+  // }
 }

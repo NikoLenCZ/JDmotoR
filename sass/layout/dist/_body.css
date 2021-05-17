@@ -9,7 +9,7 @@ html {
 
 body {
   color: #2c2929;
-  font: 1.125em/1.875em "Open Sans", sans-serif;
+  font: 1em "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -33,7 +33,7 @@ section.map {
 
 section p,
 section ol {
-  padding: 0.625em 1.25em;
+  padding: 1rem 1.3rem;
 }
 
 .img-responsive {
@@ -56,6 +56,10 @@ section .container {
   margin: 1.5em 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 ol.process li {
   padding: 0.625em 0 0.625em 0.313em;
 }
@@ -66,10 +70,6 @@ ol.process {
   display: inline-block;
 }
 
-.address {
-  text-align: center;
-}
-
 address {
   display: flex;
   flex-direction: column;
@@ -77,11 +77,59 @@ address {
 }
 
 address a {
-  color: #920b0f;
+  color: #ed1c24;
+}
+
+.address p {
+  text-align: center;
+}
+
+.others i.ico img {
+  max-height: 160px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+}
+
+.all-cards {
+  display: block;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 1rem 1.3rem;
+  justify-content: start;
+  margin: 0;
+}
+
+.card-body p {
+  padding: 0.5rem 0;
+  line-height: 1.4rem;
+}
+
+.card ul li {
+  line-height: 2em;
+  background-position: left 5px;
+}
+
+.card-body ul li {
+  background: url(../img/list.png) left 6px no-repeat;
+  padding-left: 25px;
+  list-style: none;
+}
+
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
+  align-self: center;
 }
 
 @media screen and (min-width: 768px) {
-  section .container {
+  .firm .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -91,26 +139,83 @@ address a {
     display: inline-block;
   }
 
-  .container.address {
-    justify-content: space-around;
-  }
-
   .img-responsive {
-    max-width: 40%;
-    height: auto;
+    vertical-align: middle;
   }
 
   .img-responsive.first {
+    max-width: 40%;
+    height: auto;
     margin: 1.875em 1.25em 0 0.625em;
   }
 
-  .second {
+  ol.process {
     order: 1;
+  }
+
+  .img-responsive.second {
+    max-width: 80%;
+    order: 2;
     margin: 1.875em 1.25em 0 1.25em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container.address {
+    width: 37%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .address p {
+    text-align: left;
+  }
+
+  section .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-responsive.second {
+    max-width: 40%;
+    order: 1;
+    margin: 0 1.25em 0 1.25em;
   }
 
   ol.process {
     order: 2;
+  }
+
+  .container.address {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 100%;
+    padding: 3rem 1.3rem 3rem 1.3rem;
+    flex-direction: row;
+  }
+
+  .card-body {
+    width: 70%;
+    padding: 0 10px 0 10px;
+  }
+
+  .card-img {
+    width: 25%;
+    margin-top: 0.5rem;
+  }
+
+  h3.text-feft-lg {
+    text-align: left;
+  }
+
+  .ico img {
+    margin-left: 20%;
   }
 }
 @media screen and (min-width: 1200px) {
