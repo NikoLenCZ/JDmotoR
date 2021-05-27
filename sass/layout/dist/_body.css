@@ -42,12 +42,6 @@ section ol {
   margin-top: 1.875em;
 }
 
-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .second {
   order: 2;
 }
@@ -70,18 +64,27 @@ ol.process {
   display: inline-block;
 }
 
-address {
-  display: flex;
-  flex-direction: column;
-  font-style: italic;
+i .fa {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.contact h3 {
+  padding: 0 0 3rem 0;
 }
 
 address a {
   color: #ed1c24;
 }
 
+.contact p {
+  padding: 1rem 0 0 0;
+}
+
 .address p {
-  text-align: center;
+  text-align: left;
+  font-style: italic;
+  padding: 1rem 0 1.5rem 0;
 }
 
 .others i.ico img {
@@ -115,7 +118,6 @@ address a {
 }
 
 .card-body ul li {
-  background: url(../img/list.png) left 6px no-repeat;
   padding-left: 25px;
   list-style: none;
 }
@@ -135,10 +137,6 @@ address a {
     align-items: center;
   }
 
-  .container p {
-    display: inline-block;
-  }
-
   .img-responsive {
     vertical-align: middle;
   }
@@ -155,43 +153,33 @@ address a {
 
   .img-responsive.second {
     max-width: 80%;
+    height: auto;
     order: 2;
     margin: 1.875em 1.25em 0 1.25em;
   }
-}
-@media screen and (min-width: 1000px) {
-  .container.address {
-    width: 37%;
+
+  .contact {
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
   }
-
-  .address p {
-    text-align: left;
-  }
-
-  section .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .contact {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .img-responsive.second {
     max-width: 40%;
+    height: auto;
     order: 1;
     margin: 0 1.25em 0 1.25em;
   }
 
   ol.process {
     order: 2;
-  }
-
-  .container.address {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
   }
 
   .card {
@@ -207,6 +195,7 @@ address a {
 
   .card-img {
     width: 25%;
+    height: auto;
     margin-top: 0.5rem;
   }
 
@@ -221,10 +210,6 @@ address a {
 @media screen and (min-width: 1200px) {
   .main-container {
     max-width: 1170px;
-  }
-
-  section.firm p {
-    max-width: 50%;
   }
 
   ol.process {

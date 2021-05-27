@@ -8,17 +8,7 @@ $(document).ready(function () {
 });
 $(".menu a").on("click", function () {
   $("nav ul").toggleClass("showing"), $("#menu").toggleClass("rotate");
-}); // hustej efekt rotate menu
-//   $( ".menu-icon" ).click(function() {
-//     $( this ).toggleClass( "rotate");
-// });
-//   $( ".menu-icon" ).on("click", function() {
-//     $( this ).toggleClass( "rotate");
-// });
-// $( ".menu-icon" ).on("click", function() {
-//   $( "i" ).toggleClass( "rotate");
-// });
-// Scrolling Effect
+}); // Scrolling Effect
 
 $(window).on("scroll", function () {
   if ($(window).scrollTop()) {
@@ -27,6 +17,3 @@ $(window).on("scroll", function () {
     $('nav').removeClass('blue');
   }
 });
-/*
-* LIGHTBOX
-*/

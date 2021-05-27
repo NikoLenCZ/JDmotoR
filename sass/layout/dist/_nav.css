@@ -1,48 +1,71 @@
 nav {
   position: fixed;
   width: 100%;
-  line-height: 60px;
+  line-height: 3.75em;
   z-index: 1000;
 }
 
-nav ul {
-  line-height: 60px;
+nav, nav ul {
+  line-height: 3.75em;
   list-style: none;
   overflow: hidden;
   padding: 0;
   text-align: right;
   margin: 0;
-  padding-right: 20px;
+  padding-right: 1.25em;
   transition: 1s;
 }
 
-nav.blue ul {
-  background: rgba(6, 25, 102, 0.9);
+nav.blue {
+  background: rgba(25, 70, 152, 0.9);
 }
 
-nav.blue li a {
+nav.blue li a, nav.blue p, nav.blue p a, nav.blue .m-head-contact {
   color: whitesmoke;
+  border-color: whitesmoke;
 }
 
 nav ul li {
   display: inline-block;
-  padding: 24px 16px;
+  padding: 0.5em 1em 0 0;
 }
 
 nav ul li a {
   text-decoration: none;
 }
 
+nav p a, nav p {
+  color: #030e3f;
+  text-align: end;
+  transition: 0.5s;
+}
+
+nav p a:hover {
+  color: #b10707;
+}
+
 .menu-icon {
   line-height: 60px;
   width: 100%;
-  background: #061966;
+  background: #194698;
   text-align: right;
   box-sizing: border-box;
-  padding: 15px 24px;
+  padding: 0.9375em 1.5em;
   cursor: pointer;
   color: whitesmoke;
   display: none;
+}
+
+#menu {
+  vertical-align: middle;
+}
+
+#menu {
+  transition: all 1s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .logo {
@@ -52,39 +75,83 @@ nav ul li a {
 }
 
 .logo a {
-  background: url(/img/logo.png) top left no-repeat;
+  background: url(/img/logo-1.png) top left no-repeat;
   background-size: contain;
   display: block;
-  text-indent: -9999px;
-  width: 100px;
-  height: 50px;
-  margin: 9px;
+  text-indent: 99999px;
+  width: 6.25em;
+  height: 3.125em;
+  margin: 0.5625em;
   transition: 0.5s;
 }
 
 .logo a:hover {
-  width: 120px;
-  height: 70px;
+  width: 6.5em;
+  height: 3.37em;
 }
 
-@media (max-width: 786px) {
+nav p {
+  max-height: 2rem;
+}
+
+.m-head-contact {
+  margin-right: 2rem;
+}
+
+.m-head-contact:last-child {
+  border-left: #030e3f 1px solid;
+  padding-left: 1.25rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .m-head-contact:last-child {
+    margin-right: 60%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .m-head-contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 331px) {
+  .m-head-contact.first {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 909px) {
+  nav ul, nav p {
+    background: rgba(25, 70, 152, 0.9);
+  }
+
+  nav ul li a, nav p, nav p a {
+    color: whitesmoke;
+  }
+
+  .m-head-contact:last-child {
+    border-left-color: whitesmoke;
+  }
+}
+@media screen and (max-width: 786px) {
   .logo {
     position: fixed;
     top: 0;
   }
 
-  nav ul {
+  nav ul, nav p {
     max-height: 0px;
-    background: rgba(6, 25, 102, 0.9);
+    background: rgba(25, 70, 152, 0.9);
   }
 
   nav ul li a {
     color: whitesmoke;
-    padding: 20px 40px;
+    padding: 1.25em 2.5em;
   }
 
-  nav.blue ul {
-    background: rgba(6, 25, 102, 0.9);
+  nav.blue ul, nav.blue p {
+    background: rgba(25, 70, 152, 0.9);
   }
 
   .showing {
@@ -99,25 +166,34 @@ nav ul li a {
   }
 
   nav ul li:last-child {
-    padding-bottom: 5px;
+    padding-bottom: 0.3125em;
   }
 
   nav ul li:first-child {
-    padding-top: 5px;
+    padding-top: 0.3125em;
   }
 
   .menu-icon {
     display: block;
   }
+
+  .menu-title {
+    padding-right: 0.625em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 860px) {
+  nav ul li {
+    padding: 0.25em 0.5em;
+  }
 }
 @media screen and (min-width: 991px) {
   .logo a {
-    width: 180px;
-    height: 80px;
+    width: 10em;
+    height: 3.75em;
   }
 
   .logo a:hover {
-    width: 200px;
-    height: 100px;
+    width: 10.25em;
+    height: 4em;
   }
 }

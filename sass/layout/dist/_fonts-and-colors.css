@@ -3,6 +3,22 @@ body {
   font-family: "Montserrat", "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: rgba(25, 70, 154, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  background: rgba(3, 3, 58, 0.5);
+  height: 0.5rem;
+}
+
 h1, h2, h3, h4 {
   font-family: "Open Sans", sans-serif;
 }
@@ -30,6 +46,15 @@ h1 {
 }
 
 .main-header h1 {
+  padding: 3rem 0.2rem;
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    padding: 0;
+  }
+}
+.main-header h1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.363), white);
   width: 100%;
 }
@@ -49,12 +74,18 @@ h3 {
   text-align: center;
 }
 
+.others h4 {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.8em 0;
+}
+
 .card-body h3 {
   padding: 0 0 1.5em 0;
 }
 
-p a {
-  color: #ed1c24;
+p a, li a {
+  color: #b10707;
   text-decoration: none;
 }
 
@@ -66,33 +97,41 @@ p a {
 }
 @media screen and (min-width: 768px) {
   .main-header h1 {
-    font-size: 2.4em;
+    font-size: 2.7em;
     line-height: 1.3em;
-    padding: 1em 0.3em;
+    padding: 1.5rem 0.3rem;
+  }
+
+  h2 {
+    font-size: 2em;
   }
 
   nav ul li a {
     color: #194698;
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: bold;
     transition: 0.5s;
   }
 
   ul.menu li a:hover {
-    font-size: 1.3em;
-    color: #ed1c24;
+    font-size: 1.1em;
+    color: #b10707;
   }
 }
 @media screen and (min-width: 991px) {
   .main-header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 1.4em;
     padding: 1em 0.3em;
+  }
+
+  h2 {
+    font-size: 2.3em;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-header h1 {
-    font-size: 3em;
+    font-size: 3.3em;
     line-height: 2.25em;
     padding: 1.2em 0.5em;
   }
@@ -103,6 +142,10 @@ p a {
 
   ul.menu li a:hover {
     font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 2.8em;
   }
 }
 @media screen and (min-width: 1380px) {

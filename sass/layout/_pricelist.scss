@@ -69,7 +69,7 @@ section.tab {
 
 @media screen and (min-width: 750px) {
 .tab {
-  width: 80%;
+  max-width: 695px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -89,7 +89,7 @@ td:nth-child(2) {
 
 @media screen and (min-width: 1200px) {
   .tab {
-    width: 70%;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
   }

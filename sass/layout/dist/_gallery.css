@@ -23,6 +23,11 @@ section.gallery {
   justify-content: center;
 }
 
+@media screen and (max-width: 786px) {
+  .gallery-main-header {
+    height: 8rem;
+  }
+}
 .photo img {
   min-width: 100%;
   max-width: 100%;
@@ -37,7 +42,9 @@ section.gallery {
 }
 
 .photo .all-title {
-  margin-bottom: 1.111em;
+  margin-bottom: 2.111em;
+  display: flex;
+  justify-content: center;
 }
 
 #overlay {
@@ -56,7 +63,11 @@ section.gallery {
 #overlay img {
   max-width: 100%;
   align-self: center;
-  padding: 4em;
+  padding: 4rem;
+}
+
+p.title {
+  margin: 0.5rem 0;
 }
 
 @media screen and (min-width: 500px) {
@@ -112,18 +123,19 @@ section.gallery {
   }
 }
 @media screen and (min-width: 1001px) {
-  section.gallery {
-    padding-left: 1.11em;
+  section.gallery.article-gallery {
+    display: flex;
+    justify-content: center;
   }
 
   .photo {
-    width: 32%;
-    margin: 0.2em;
+    width: 33%;
+    margin: 0.1em;
     filter: drop-shadow(0px 0px 30px #333);
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-container {
-    max-width: 1170px;
+    max-width: 1140px;
   }
 }

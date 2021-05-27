@@ -1,28 +1,6 @@
-* {
-  // outline: 1px solid black;
-}
-
-$primary-color: #194698;
-$secondary-color: whitesmoke;
-$text-color: #2c2929;
-$links-color: #ed1c24;
-$navigation-text: #030e3f;
-$selection-color: #03033a;
-$title-text: #ffffff;
-$title-background: rgba(0, 0, 0, 0.65);
-$gallery-shadow:  #000000;
-$headline-color: #040431;
-$gallery-gradient: linear-gradient(#e3e5e9e8, #ffffff);
-$main-gradient: linear-gradient(rgba(255, 255, 255, 0.363), white);
-
 ::selection {
   background-color: $selection-color;
   color: $secondary-color;
-}
-
-html {
-  scroll-behavior: smooth;
-
 }
 
 body {
@@ -31,42 +9,65 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.main-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 section {
   padding: 5em 0 0 0;
 }
 
+section a {
+  font-weight: bold;
+}
+
 section.contact {
   padding-bottom: 1.25em;
+  background-color: $primary-color;
+  color: $secondary-color;
+  transition: 0.5s;
 }
 
-section.map {
-  margin-top: 0;
-  padding: 0;
+section.contact a {
+  color: $secondary-color;
+  text-decoration: underline;
+  font-weight: inherit;
+  transition: 0.5s;
 }
 
-section p,
-section ol {
-  padding: 1rem 1.3rem;
+section.contact a:hover {
+  color: $links-color;
 }
 
+
+.container.contact {
+  margin: 0;
+  max-width: 100%;
+}
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-top: 1.875em;
 }
 
-section .container {
+.first .img-responsive, 
+.second .img-responsive {
+  padding-top: 2rem;
+}
+
+.first-block, .second-block {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
+.first-block p, .second-block ol {
+padding: 0 1.25rem;
+}
+
+.info p {
+  padding: 1.25rem 1.25rem 0;
+}
+
+
+.first {
+  order: 2;
+}
 
 .second {
   order: 2;
@@ -94,24 +95,38 @@ ol.process {
 }
 
 
-address {
-  display: flex;
-  flex-direction: column;
-  font-style: italic;
+i .fa {
+  margin-right: 5px;
+  font-size: 16px;
 }
 
-address a {
-  color: $links-color;
+.contact .row {
+  padding: 0 1.25rem;
+}
+
+.contact p {
+  padding-top:  1rem;
+
+}
+
+.address {
+  padding-bottom: 1.5rem;
 }
 
 .address p {
-  text-align: center;
+  text-align: left;
+  font-style: italic;
+  padding-top:  1rem;
 }
 
 
+
+
+
+
 .others i.ico img {
- max-height: 160px;
- border-radius: 20px;
+max-height: 160px;
+border-radius: 20px;
 box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
 
 }
@@ -119,53 +134,74 @@ box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
 
 
 .all-cards {
-display: block;
+display: flex;
+justify-content: space-between;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-between;
-  padding: 1rem 1.3rem;
-  justify-content: start;
-  margin: 0;
+  margin: 1.5rem 0;
+}
+
+.card-body {
+  padding: 2rem 1.25rem;
 }
 
 .card-body p {
- padding: 0.5rem 0;
  line-height: 1.4rem;
 }
 
 
-.card ul {
-  // display: inline-block;
-}
-
 .card ul li {
   line-height: 2em;
-  
     background-position: left 5px;
-
-  
 
 }
 
 .card-body ul li {
-   background: url(../img/list.png) left 6px no-repeat;
-   padding-left: 25px;
+  padding-left: 1.25rem;
   list-style: none;
   }
 
+  .card-body ul li .fa-chevron-right{
+  display: block;
+  position: absolute;
+  left: 15px;
+  margin-top: 8px;
+}
+
 
 .card-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2.5rem;
-  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
 }
 
+
+@media screen and (min-width: 500px) {
+.contact h4,
+.contact p,
+.contact address {
+  padding-left: 1.4rem;
+}
+.address p {
+padding-left: 0;
+}
+}
+
+@media screen and (min-width: 586px) and (max-width: 992px) {
+
+  .first-block p, .second-block ol {
+    padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+.display-xs-none {
+  display: none;
+}
+}
 
 @media screen and (min-width: 768px) {
 
@@ -175,113 +211,64 @@ display: block;
     align-items: center;
   }
 
-  .container p {
-    display: inline-block;
-  }
 
   .img-responsive {
     vertical-align: middle;
   }
 
-  .img-responsive.first {
-    max-width: 40%;
-    height: auto;
-    margin: 1.875em 1.25em 0 0.625em;
+}
+
+.contact .row {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
   }
 
-  ol.process {
+
+@media screen and (min-width: 992px) {
+  .card-img {
+    align-items: start;
+    justify-content: start;
+    margin-left: 20%;
+  }
+
+  .second {
     order: 1;
   }
 
-  .img-responsive.second {
-    max-width: 80%;
+  .second-block {
     order: 2;
-    margin: 1.875em 1.25em 0 1.25em;
   }
 
+  .first .img-responsive,
+.second .img-responsive {
+  padding-top: 0;
+}
+
+.first-block p, .second-block ol {
+  padding: 0 30px;
+  }
+
+.container.contact {
+  padding-top: 1.5rem;
+}
+
+}
+
+.container.contact {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.contact h3 {
+  padding-bottom: 1.8rem;
 }
 
 @media screen and (min-width: 1000px) {
 
-  .container.address {
-    width: 37%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
+  .card-img img {
+    height: auto;
+    margin: 2rem 0;
   }
-  
-  .address p {
-    text-align: left;
-  }
-
-  
-
-  section .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .img-responsive.second {
-    max-width: 40%;
-    order: 1;
-    margin: 0 1.25em 0 1.25em;
-  }
-
-
-  ol.process {
-    order: 2;
-  }
-
-  .container.address {
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
-  }
-
-
-  .card {
-    width: 100%;
-    padding: 3rem 1.3rem 3rem 1.3rem;
-    flex-direction: row;
-  }
-
-
-  .card-body {
-    width: 70%;
-    padding: 0 10px 0 10px;
-  }
-  .card-img {
-    width: 25%;
-    margin-top: 0.5rem;
-  }
-
-  h3.text-feft-lg {
-    text-align: left;
-  }
-
-  .ico img {
-    margin-left: 20%;
-  }
-
 }
 
-
-@media screen and (min-width: 1200px) {
-  .main-container {
-    max-width: 1170px;
-  }
-
-  section.firm p {
-    max-width: 50%;
-  }
-
-  ol.process {
-    max-width: 45%;
-  }
-
-  // .card-body {
-  //   width: 85%;
-  // }
-}
