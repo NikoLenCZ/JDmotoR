@@ -1365,6 +1365,26 @@ h1, h2, h3, h4 {
 /* /Fonty */
 /* COLORS */
 /* /COLORS */
+.BeeCookie-whitepurple:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 6px 6px 6px;
+  border-color: #030e3f #030e3f transparent #030e3f !important;
+}
+
+.BeeCookie-whitepurple a.BeeCookie-button {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  transition: 0.2s linear;
+  border: 2px solid #030e3f;
+}
+
 .navigation li a {
   color: #030e3f;
   font-size: 1em;
@@ -2000,10 +2020,6 @@ nav p {
     height: 4em;
   }
 }
-h1 .p-0 {
-  padding: 0 !important;
-}
-
 section.gallery {
   padding: 0;
   margin: 2.2em auto;
