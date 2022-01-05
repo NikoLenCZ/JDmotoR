@@ -42,7 +42,7 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 # https /
 RewriteEngine On 
 RewriteCond %{HTTPS} off 
-RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301] 
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R=301,L] 
 Header set Content-Security-Policy "upgrade-insecure-requests;"
 
 # přesměrování /
