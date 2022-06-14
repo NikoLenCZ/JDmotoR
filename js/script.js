@@ -2,13 +2,15 @@
     $(document).ready(function () {
       $(".menu-icon").on("click", function () {
         $("nav ul").toggleClass("showing"),
-        $( "#menu").toggleClass( "rotate");
+        $("#menu").toggleClass( "rotate");
       });
     });
     $(".menu a").on("click", function () {
       $("nav ul").toggleClass("showing"),
-        $( "#menu").toggleClass( "rotate");
+        $("#menu").toggleClass( "rotate");
     });
+    
+    
     // Scrolling Effect
     $(window).on("scroll", function () {
       if ($(window).scrollTop()) {
