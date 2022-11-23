@@ -8,4 +8,16 @@ Kompletní redesign webových stránek - projekt postavený na "zelené louce"
 4) revize a úpravy
 5) spuštění live
 
+Created with:
+
+- HTML
+- Sass / SCSS
+- JQuery / JS
+
+Tools:
+
+- VS Code
+- Photoshop
+- Adobe XD
+
 výsledný web: https://jdmotor.cz
