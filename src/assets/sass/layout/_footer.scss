@@ -1,0 +1,34 @@
+footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  margin: 0;
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+}
+
+footer a {
+  color: $secondary-color;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color: $links-color;
+}
+
+footer p {
+  margin: 0;
+  padding: 1.11em 2.21em;
+}
+
+
+@media screen and (min-width: 991px) {
+footer {
+  text-align: end;
+  font-size: 0.88em;
+}
+}
+
