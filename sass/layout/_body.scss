@@ -1,0 +1,277 @@
+::selection {
+  background-color: $selection-color;
+  color: $secondary-color;
+}
+
+body {
+  color: $text-color;
+  font: 1em 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+section {
+  padding: 5em 0 0 0;
+}
+
+section a {
+  font-weight: bold;
+}
+
+section.contact {
+  padding-bottom: 1.25em;
+  background-color: $primary-color;
+  color: $secondary-color;
+  transition: 0.5s;
+}
+
+section.contact a {
+  color: $secondary-color;
+  text-decoration: underline;
+  font-weight: inherit;
+  transition: 0.5s;
+}
+
+section.contact a:hover {
+  color: $links-color;
+}
+
+
+.container.contact {
+  margin: 0;
+  max-width: 100%;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.first .img-responsive, 
+.second .img-responsive {
+  padding-top: 2rem;
+}
+
+.first-block, .second-block {
+  display: flex;
+  align-items: center;
+}
+
+.first-block p, .second-block ol {
+padding: 0 1.25rem;
+}
+
+.info p {
+  padding: 1.25rem 1.25rem 0;
+}
+
+
+.first {
+  order: 2;
+}
+
+.second {
+  order: 2;
+}
+
+
+.mtb-small {
+  margin: 1.5em 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+ol.process li {
+  padding: 0.625em 0 0.625em 0.313em;
+}
+
+
+ol.process {
+  list-style-type: decimal;
+  margin-left: 1.25em;
+  display: inline-block;
+}
+
+
+i .fa {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.contact .row {
+  padding: 0 1.25rem;
+}
+
+.contact p {
+  padding-top:  1rem;
+
+}
+
+.address {
+  padding-bottom: 1.5rem;
+}
+
+.address p {
+  text-align: left;
+  font-style: italic;
+  padding-top:  1rem;
+}
+
+
+
+
+
+
+.others i.ico img {
+max-height: 160px;
+border-radius: 20px;
+box-shadow: 0px 0px 40px 3px rgba(66, 65, 65, 0.288);
+
+}
+
+
+
+.all-cards {
+display: flex;
+justify-content: space-between;
+}
+
+.card {
+  margin: 1.5rem 0;
+}
+
+.card-body {
+  padding: 2rem 1.25rem;
+}
+
+.card-body p {
+ line-height: 1.4rem;
+}
+
+
+.card ul li {
+  line-height: 2em;
+    background-position: left 5px;
+
+}
+
+.card-body ul li {
+  padding-left: 1.25rem;
+  list-style: none;
+  }
+
+  .card-body ul li .fa-chevron-right{
+  display: block;
+  position: absolute;
+  left: 15px;
+  margin-top: 8px;
+}
+
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+
+@media screen and (min-width: 500px) {
+.contact h4,
+.contact p,
+.contact address {
+  padding-left: 1.4rem;
+}
+.address p {
+padding-left: 0;
+}
+}
+
+@media screen and (min-width: 586px) and (max-width: 992px) {
+
+  .first-block p, .second-block ol {
+    padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 786px) {
+.display-xs-none {
+  display: none;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+  .firm .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .img-responsive {
+    vertical-align: middle;
+  }
+
+}
+
+.contact .row {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+
+@media screen and (min-width: 992px) {
+  .card-img {
+    align-items: start;
+    justify-content: start;
+    margin-left: 20%;
+  }
+
+  .second {
+    order: 1;
+  }
+
+  .second-block {
+    order: 2;
+  }
+
+  .first .img-responsive,
+.second .img-responsive {
+  padding-top: 0;
+}
+
+.first-block p, .second-block ol {
+  padding: 0 30px;
+  }
+
+.container.contact {
+  padding-top: 1.5rem;
+}
+
+}
+
+.container.contact {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.contact h3 {
+  padding-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .card-img img {
+    height: auto;
+    margin: 2rem 0;
+  }
+}
+
+
+
